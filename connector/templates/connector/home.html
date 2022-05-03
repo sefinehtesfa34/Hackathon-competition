@@ -8,8 +8,12 @@
  <form enctype="multipart/form-data" action="/your-name/" method="post">
    
    {% csrf_token %}    
+   {% for pred,resume in predicted %}
+   <h1>{{resume}} : {{ pred }}</h1>
+
+   {% endfor %}
    
-   <h1>{{ predicted }}</h1>
+
    <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
