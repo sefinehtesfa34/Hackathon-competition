@@ -2,7 +2,7 @@
 import os
 from zipfile import ZipFile
 from django.conf import settings
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import  HttpResponseRedirect
 from django.shortcuts import redirect, render
 import tensorflow as tf
 from connector.forms import RegisterForm
