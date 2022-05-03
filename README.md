@@ -31,6 +31,6 @@ Design a system using Tensorflow that classifies a resume based on its potential
 
 Training The Model: Pipeline
 
-<img src="/home/sefineh/Desktop/Hackathon-competition/connector/static/model_pipeline.png" alt="Model pipeline">
+<img src="connector/static/model_pipeline.png" alt="Model pipeline">
 
 
