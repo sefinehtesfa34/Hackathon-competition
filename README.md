@@ -29,7 +29,7 @@ Design a system using Tensorflow that classifies a resume based on its potential
 6) Test on team mate’s resume (show later in demo)
 
 
-Training The Model: Pipeline
+# Training The Model: Pipeline
 
 <img src="connector/static/model_pipeline.png" alt="Model pipeline">
 
