@@ -38,7 +38,7 @@ def register(request):
         form=RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/home/')
         else:    
             form=RegisterForm()
             return redirect("/register/")
@@ -46,7 +46,9 @@ def register(request):
         
         return render(request,'connector/register.html')
     
-        
+def login(request):
+    
+    return render(request,'connector/login.html')
 
     
 

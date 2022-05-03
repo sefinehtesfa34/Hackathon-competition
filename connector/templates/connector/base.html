@@ -11,44 +11,31 @@
 
 <body>
 
-<div class="container">
-    <nav style="background-color:blue" class="nav nav-pills nav-justified m-3">
-        <a class="nav-item nav-link active" href="{% url 'register' %}">Sign Up</a>
-        <a class="nav-item nav-link active" href="#">Login</a>
-        <a class="nav-item nav-link active" href="#">Resume Screening</a>
-      </nav>
-    <div class=" m-5 card-columns">
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
+  <div>
+    <div class="px-5 py-2 row shadow bg-light justify-content-between text-primary align-content-center">
+        <div class="row">
+            <h3>Resume Screening web app</h3>
         </div>
-        <div class="card bg-primary text-white text-center p-3">
-            <blockquote class="blockquote mb-0">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">
-                <small class="text-muted">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
+        <div>
+            <a class="btn btn-outline-primary" href="{% url 'register' %}">logout</a>
+        </div>
+    </div>
 
-        </div>
-           
+    <div class="m-5">
+      <div class="card text-center p-3">
+          <blockquote class="blockquote mb-0">
+              <p>Whatever the job you are asked to do at whatever level, do a god job because your reputation is your resume </p>
+              
+            </blockquote>
+      </div>
+  </div>
+<div class="container mb-5">
         {% block content%}
     
     
         {% endblock%}
         
-   
+</div>
       </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
