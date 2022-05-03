@@ -8,10 +8,18 @@
  <form enctype="multipart/form-data" action="/your-name/" method="post">
    
    {% csrf_token %}    
+   <h1 style="color: magenta">The predicted job description category is <span style="color:cyan">{{ job_catego }}</span></h1>
    {% for pred,resume in predicted %}
-   <h1>{{resume}} : {{ pred }}</h1>
 
+   <h1 style="color:blue;">{{resume }}  :   <span style="color:green;margin-left:5">{{ pred}}</span> </h1>
    {% endfor %}
+
+   <h1 style="color:orange">The similarities of each resume to the job descriptions are as follows:</h1> 
+   {% for sim in similarity %}
+    
+   <h1 style="color:cyan"> {{sim}} </h1>
+    {% endfor %}
+   
    
 
    <div class="input-group mb-3">
