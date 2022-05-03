@@ -53,7 +53,6 @@ def upload(request):
                     resume_name.append(file_name)
                     similarity=cosine_similarity(job_prob,resume_prob)[0]
                     similarity_prob.append(similarity.tolist()[0]*100)
-                    print(similarity[0],type(similarity))
                     os.remove(file_path)
         except:
             return render(request,'connector/home.html')
